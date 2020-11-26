@@ -18,7 +18,7 @@ function setup() {
   textSize(20); 
 }
 
-// function to display UI
+
 function draw() {
   background(46,139,87);
  
@@ -30,8 +30,11 @@ function draw() {
   text("Note: Press UP_ARROW Key To Feed Drago Milk!",130,10,300,20);
 }
 
-//Write a function to read  foodStock from the database.
-
+//Function to read  foodStock from the database.
+function readStock(data){
+  //Function to read values from DB
+foodS = data.val();
+}
 
 //Function to write values in DB
 function writeStock(x){
